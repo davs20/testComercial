@@ -19,6 +19,7 @@ class UserSeeder extends Seeder
             'email' => 'david_delcid21@outlook.com',
             'nombre_usuario' => 'davs20',
             'rol_id' => 1,
+            'created_at' => '2021-04-21 12:43:18',
             'promocion_tipo' => null,
             'telefono' => '50497439936',
             'password' => bcrypt('marvelita2020')
@@ -27,6 +28,7 @@ class UserSeeder extends Seeder
             'email' => 'rubilios@outlook.com',
             'nombre_usuario' => 'rubi',
             'rol_id' => 2,
+            'created_at' => '2021-04-21 12:43:18',
             'promocion_tipo' => null,
             'telefono' => '97439936',
             'password' => bcrypt('123456')
@@ -35,6 +37,7 @@ class UserSeeder extends Seeder
             'name' => 'Armando',
             'email' => 'rubilio_armando@outlook.com',
             'nombre_usuario' => 'armando',
+            'created_at' => '2021-04-21 12:43:18',
             'rol_id' => 3,
             'promocion_tipo' => 1,
             'telefono' => '447778936',

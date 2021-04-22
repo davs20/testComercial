@@ -45,7 +45,7 @@
                         <div class="form-group">
                             <label for="">Campañas</label>
                             <select class="form-select form-control" name="campanas[]"  multiple aria-label="multiple select example">
-                                <option  >Seleccione multiple opciones</option>
+                                <option {{sizeof($user->campanas) > 0 ?  "selected" : ""}}selected  >Seleccione multiple opciones</option>
                                 @foreach ($campanas as $item)
                                     <option value="{{$item->id}}" {{($item->id == in_array($item->id, $promocion_users)) ? "selected" : "" }} >{{$item->nombre}}</option>
                                 @endforeach

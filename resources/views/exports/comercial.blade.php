@@ -6,6 +6,7 @@
         <th scope="col">Rol</th>
         <th scope="col">Correo</th>
         <th scope="col">Telefono</th>
+        <th scope="col">Fecha de ingreso</th>
         <th scope="col">Promocion</th>
       </tr>
     </thead>
@@ -17,10 +18,10 @@
             <td>{{$user->rol->nombre}}</td>
             <td>{{$user->email}}</td>
             <td>{{$user->telefono}}</td>
+            <td>{{$user->created_at}}</td>
             <td>
                 {{$user->promocion->nombre}}
             </td>
-        
           </tr>
         @endforeach
     </tbody>

@@ -59,6 +59,7 @@
                                 <th scope="col">Nombre</th>
                                 <th scope="col">Telefono</th>
                                 <th scope="col">Correo</th>
+                                <th scope="col">Fecha de ingreso</th>
                                 <th scope="col">Promocion</th>
                               </tr>
                             </thead>
@@ -74,14 +75,13 @@
                                     <td>
                                         {{$user->email}}
                                     </td>
+                                    <td>{{$user->created_at}}</td>
                                     <td>
                                         @if ($user->promocion)
                                             <span class="badge bg-primary text-light">{{$user->promocion->nombre}}</span>
-
                                         @else
-                                        No tiene promociones
+                                            No tiene promociones
                                         @endif
-                                        
                                     </td>
                                 </tr>
                                 @endforeach
