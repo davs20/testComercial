@@ -16,7 +16,6 @@ class AddFieldsToUser extends Migration
         Schema::table('users', function (Blueprint $table) {
             $table->string('telefono');
             $table->string('nombre_usuario');
-            $table->timestamp('fecha_ingreso')->nullable();
             $table->unsignedBigInteger('rol_id');
             $table->unsignedBigInteger('promocion_tipo')->nullable();
             $table->foreign('rol_id')->on('roles')->references('id');
