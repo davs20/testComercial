@@ -2,7 +2,7 @@
 
 ## Requisitos 
 Tene instalado Docker engine , usando ubuntu 18.04 en delante.
-Tener libre puerto 80 y 
+Tener libre puerto 80
 
 
 ## Instrucciones para instalar ambiente
